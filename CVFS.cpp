@@ -124,8 +124,6 @@ PINODE head = NULL;				// global pointer
 //	Input			: 	char *
 //	Output			: 	None
 //	Description 	: 	It Display The Description For Each Commands
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -228,8 +226,6 @@ void man(char *name)
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	It Display All List / Operations About This Application
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -258,8 +254,6 @@ void DisplayHelp()
 //	Input			: 	char*
 //	Output			: 	Integer
 //	Description 	: 	Get File Descriptor Value
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -296,8 +290,6 @@ int GetFDFromName(char *name)
 //	Input			: 	char*
 //	Output			: 	PINODE
 //	Description 	: 	Return Inode Value Of File
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -330,8 +322,6 @@ PINODE Get_Inode(char * name)
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	It Creates The DILB When Program Starts 
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -374,8 +364,6 @@ void CreateDILB()
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	Initialize Inode Values 
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -400,8 +388,6 @@ void InitialiseSuperBlock()
 //	Input			: 	char*, Integer
 //	Output			: 	None
 //	Description 	: 	Create New Files
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -481,8 +467,6 @@ int CreateFile(char *name,int permission)
 //	Input			: 	char*
 //	Output			: 	Integer
 //	Description 	: 	Remove Created Files
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -523,8 +507,6 @@ int rm_File(char * name)
 //	Input			: 	Integer, char*, Integer
 //	Output			: 	Integer
 //	Description 	: 	Read Data From File
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -587,8 +569,6 @@ int ReadFile(int fd, char *arr, int isize)
 //	Input			: 	Integer, char*, Integer
 //	Output			: 	Integer
 //	Description 	: 	Write Data Into The File
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -636,8 +616,6 @@ int WriteFile(int fd, char *arr, int isize)
 //	Input			: 	char*, Integer
 //	Output			: 	Integer
 //	Description 	: 	Open An Existing File
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -713,8 +691,6 @@ int OpenFile(char *name, int mode)
 //	Input			: 	Integer
 //	Output			: 	None
 //	Description 	: 	Close Existing File By By Its File Descriptor
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -734,8 +710,6 @@ void CloseFileByName(int fd)
 //	Input			: 	Char
 //	Output			: 	Integer
 //	Description 	: 	Close Existing File By Its Name
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -769,8 +743,6 @@ int CloseFileByName(char *name)
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	Close All Existing Files
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -798,8 +770,6 @@ void CloseAllFile()
 //	Input			: 	Integer, Integer, Integer
 //	Output			: 	Integer
 //	Description 	: 	Write Data Into The File From Perticular Position
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -934,8 +904,6 @@ int LseekFile(int fd, int size, int from)
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	List Out All Existing Files Name
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -973,8 +941,6 @@ void ls_file()
 //	Input			: 	Integer
 //	Output			: 	Integer
 //	Description 	: 	Display Statistical Information Of The File By Using File Descriptor
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -1032,8 +998,6 @@ int fstat_file(int fd)
 //	Input			: 	Char*
 //	Output			: 	Integer
 //	Description 	: 	Display Statistical Information Of The File By Using File Name
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -1099,8 +1063,6 @@ int stat_file(char *name)
 //	Input			: 	Char*
 //	Output			: 	Integer
 //	Description 	: 	Delete All Data From The File
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -1128,8 +1090,6 @@ int truncate_File(char *name)
 //	Input			: 	None
 //	Output			: 	None
 //	Description 	: 	Take Backup Of All Created Files Into Hard-Disk
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
@@ -1159,8 +1119,6 @@ void backup()
 //	Input			: 	None
 //	Output			: 	Integer
 //	Description 	: 	Entry Point Function
-//	Author			: 	Prasad Dangare
-//	Date			:	28 June 2021
 //
 //######################################################################################
 
